@@ -84,7 +84,8 @@ public class MainActivity extends AppCompatActivity {
                     Intent bootIntent = new Intent(context, MainActivity.class);
                     Notification.Builder builder = new Notification.Builder(context);
                     builder.setSmallIcon(android.R.drawable.ic_dialog_info)
-                            .setContentTitle("バッテリー残量が１５％になりました。")
+                            .setContentTitle("バッテリー残量")
+                            .setContentText("バッテリー残量が１５％になりました。")
                             .setWhen(System.currentTimeMillis())
                             .setPriority(Notification.PRIORITY_HIGH)
                             .setAutoCancel(true)
